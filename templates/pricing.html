@@ -1,0 +1,322 @@
+{%load static%}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing | HashForexUG</title>
+  <link rel="shortcut icon" type="image/png" href="assets/images/logos/favicon.png" />
+  <link rel="stylesheet" href="{% static 'assets/css/styles.min.css' %}" />
+
+   <!-- pricing styles starts here-->
+            <!-- Favicons -->
+        <link href="img/favicon.ico" rel="icon">
+        <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+        
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito:300,600,900|Raleway:300,400,500&display=swap" rel="stylesheet">  
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Main Stylesheet File -->
+        <link href="{% static './assets/css/price.css' %}" rel="stylesheet">
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar">
+      <!-- Sidebar scroll-->
+      <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+          <a href="/" class="text-nowrap logo-img">
+            <img src="{% static 'assets/images/logos/dark-logo.png' %}" width="180" alt="" />
+          </a>
+          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+            <i class="ti ti-x fs-8"></i>
+          </div>
+        </div>
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+          <ul id="sidebarnav">
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Navigation</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="/" aria-expanded="false">
+                <span>
+                  <i class="ti ti-home"></i>
+                </span>
+                <span class="hide-menu">My Dashboard</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="pricing.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-businessplan"></i>
+                </span>
+                <span class="hide-menu">Pricing</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="https://hashforexug.com/live-chat/" target="_blank" aria-expanded="false">
+                <span>
+                  <i class="ti ti-brand-hipchat"></i>
+                </span>
+                <span class="hide-menu">Live Chat</span>
+              </a>
+            </li>
+            
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Risk Management</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="journal-trades.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-notes"></i>
+                </span>
+                <span class="hide-menu">Journal Your Trades</span>
+              </a>
+            </li> 
+             <li class="sidebar-item">
+              <a class="sidebar-link" href="{% url 'plan:homepage' %}" aria-expanded="false">
+                <span>
+                  <i class="ti ti-chart-infographic"></i>
+                </span>
+                <span class="hide-menu">Trading Plan </span>
+              </a>
+            </li> 
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="trading-business-plan.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-chart-infographic"></i>
+                </span>
+                <span class="hide-menu">Trading Psychology</span>
+              </a>
+            </li> 
+
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Markets</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="trading-view.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-timeline"></i>
+                </span>
+                <span class="hide-menu">Trading VIew</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="stock-markets.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-chart-line"></i>
+                </span>
+                <span class="hide-menu">Stock Markets</span>
+              </a>
+            </li>
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Support</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="javascript:void(0)" aria-expanded="false">
+                <span>
+                  <i class="ti ti-help"></i>
+                </span>
+                <span class="hide-menu">Support Centre</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="https://hashforexug.com/contact-us/" target="_blank" aria-expanded="false">
+                <span>
+                  <i class="ti ti-phone"></i>
+                </span>
+                <span class="hide-menu">Contact Us</span>
+              </a>
+            </li>
+
+
+            
+          </ul>
+          
+        </nav>
+        <!-- End Sidebar navigation -->
+      </div>
+      <!-- End Sidebar scroll-->
+    </aside>
+    <!--  Sidebar End -->
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+      <!--  Header Start -->
+      <header class="app-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <ul class="navbar-nav">
+            <li class="nav-item d-block d-xl-none">
+              <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                <i class="ti ti-menu-2"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icon-hover" href="javascript:void(0)">
+                <i class="ti ti-bell-ringing"></i>
+                <div class="notification bg-primary rounded-circle"></div>
+              </a>
+            </li>
+          </ul>
+          <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+            <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+              <a href="{% url 'plan:logout' %}" class="btn btn-primary m-1">Logout</a>
+              
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!--  Header End -->
+      <div class="container-fluid">
+        
+<!-- Insert content Here-->
+
+<!-- Pricing Starts Here-->  
+   
+  <!-- Pricing Table 5 Start -->
+        <div class="pricing-table-title">
+            <h2>Our Prices</h2>
+        </div>
+        <div class="pricing-table table-5">
+            <div class="ptable-item">
+                <div class="ptable-single">
+                    <div class="ptable-header">
+                        <div class="ptable-title">
+                           <h2>FREE PLAN</h2>
+                        </div>
+                        <div class="ptable-price">
+                            <h2><small>$</small>0<span>/ M</span></h2>
+                        </div>
+                    </div>
+                   
+                    <div class="ptable-body">
+                        <div class="ptable-description">
+                            <ul>
+                                <li>Free Live Community Access</li>
+                                <li>Basic Trading Education</li>
+                                <li>Private Live Community Access</li>
+                                <li>Basic trading Tools</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ptable-footer">
+                        <div class="ptable-action">
+                            <a href="https://hashforexug.com/lets-get-started/"><i class="fa fa-shopping-cart"></i>Choose Plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ptable-item featured-item">
+                <div class="ptable-single">
+                    <div class="ptable-header">
+                        <div class="ptable-status">
+                            <span>Hot</span>
+                        </div>
+                        <div class="ptable-title">
+                            <h2>Get Monitored</h2>
+                        </div>
+                        <div class="ptable-price">
+                            <h2><small>$</small>256<span></span></h2>
+                        </div>
+                        <div class="ptable-title">
+                            <h2>Life-Time</h2>
+                        </div>
+
+                    </div>
+                    <div class="ptable-body">
+                        <div class="ptable-description">
+                            <ul>
+                                <li>Master the Skill of Price Action Trading</li>
+                                <li>Unlimited Learning Access</li>
+                                <li>24/7 Technical Support</li>
+                                <li>FX Trading Plan</li>
+                                <li>Psychology & Mindset</li>
+                                <li>Easy to Use</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ptable-footer">
+                        <div class="ptable-action">
+                            <a href="https://hashforexug.com/lets-get-started/"><i class="fa fa-shopping-cart"></i>choose Plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ptable-item">
+                <div class="ptable-single">
+                    <div class="ptable-header">
+                        <div class="ptable-title">
+                            <h2>Private Live Trading</h2>
+                        </div>
+                        <div class="ptable-price">
+                            <h2><small>$</small>500<span>/ M</span></h2>
+                        </div>
+                    </div>
+                    <div class="ptable-body">
+                        <div class="ptable-description">
+                            <ul>
+                                <li>Daily Live Trading</li>
+                                <li>Deep Price Plan</li>
+                                <li>24/7 Technical Support</li>
+                                <li>Chart Analysis</li>
+                                <li>Mentorship</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ptable-footer">
+                        <div class="ptable-action">
+                            <a href="https://hashforexug.com/lets-get-started/"><i class="fa fa-shopping-cart"></i>Choose Plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing Table 5 End -->
+
+    <!--Pricing Ends Here-->>                    
+
+
+
+
+
+
+
+
+<!--Conntent Ends Here-->
+
+<!--Footer Stars Here-->
+
+        <div class="py-6 px-6 text-center">
+          <p class="mb-0 fs-4">Copyright © 2024 Hash Forex Uganda. All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="{% static 'assets/libs/jquery/dist/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/js/sidebarmenu.js' %}"></script>
+  <script src="{% static 'assets/js/app.min.js' %}"></script>
+  <script src="{% static 'assets/libs/apexcharts/dist/apexcharts.min.js' %}"></script>
+  <script src="{% static 'assets/libs/simplebar/dist/simplebar.js' %}"></script>
+  <script src="{% static 'assets/js/dashboard.js' %}"></script>
+</body>
+
+</html>

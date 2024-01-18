@@ -1,0 +1,377 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing | HashForexUG</title>
+  <link rel="shortcut icon" type="image/png" href="assets/images/logos/favicon.png" />
+  <link rel="stylesheet" href="{% static 'assets/css/styles.min.css' %}" />
+
+   <!-- pricing styles starts here-->
+            <!-- Favicons -->
+        <link href="img/favicon.ico" rel="icon">
+        <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+        
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito:300,600,900|Raleway:300,400,500&display=swap" rel="stylesheet">  
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Main Stylesheet File -->
+        <link href="{% static './assets/css/price.css' %}" rel="stylesheet">
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar">
+      <!-- Sidebar scroll-->
+      <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+          <a href="/" class="text-nowrap logo-img">
+            <img src="{% static 'assets/images/logos/dark-logo.png' %}" width="180" alt="" />
+          </a>
+          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+            <i class="ti ti-x fs-8"></i>
+          </div>
+        </div>
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+          <ul id="sidebarnav">
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Navigation</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="/" aria-expanded="false">
+                <span>
+                  <i class="ti ti-home"></i>
+                </span>
+                <span class="hide-menu">My Dashboard</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="pricing.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-businessplan"></i>
+                </span>
+                <span class="hide-menu">Pricing</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="https://hashforexug.com/live-chat/" target="_blank" aria-expanded="false">
+                <span>
+                  <i class="ti ti-brand-hipchat"></i>
+                </span>
+                <span class="hide-menu">Live Chat</span>
+              </a>
+            </li>
+            
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Risk Management</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="journal-trades.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-notes"></i>
+                </span>
+                <span class="hide-menu">Journal Your Trades</span>
+              </a>
+            </li> 
+             <li class="sidebar-item">
+              <a class="sidebar-link" href="{% url 'plan:homepage' %}" aria-expanded="false">
+                <span>
+                  <i class="ti ti-chart-infographic"></i>
+                </span>
+                <span class="hide-menu">Trading Plan </span>
+              </a>
+            </li> 
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="trading-business-plan.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-chart-infographic"></i>
+                </span>
+                <span class="hide-menu">Trading Psychology</span>
+              </a>
+            </li> 
+
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Markets</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="trading-view.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-timeline"></i>
+                </span>
+                <span class="hide-menu">Trading VIew</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="stock-markets.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-chart-line"></i>
+                </span>
+                <span class="hide-menu">Stock Markets</span>
+              </a>
+            </li>
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Support</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="javascript:void(0)" aria-expanded="false">
+                <span>
+                  <i class="ti ti-help"></i>
+                </span>
+                <span class="hide-menu">Support Centre</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="https://hashforexug.com/contact-us/" target="_blank" aria-expanded="false">
+                <span>
+                  <i class="ti ti-phone"></i>
+                </span>
+                <span class="hide-menu">Contact Us</span>
+              </a>
+            </li>
+
+
+            
+          </ul>
+          
+        </nav>
+        <!-- End Sidebar navigation -->
+      </div>
+      <!-- End Sidebar scroll-->
+    </aside>
+    <!--  Sidebar End -->
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+      <!--  Header Start -->
+      <header class="app-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <ul class="navbar-nav">
+            <li class="nav-item d-block d-xl-none">
+              <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                <i class="ti ti-menu-2"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icon-hover" href="javascript:void(0)">
+                <i class="ti ti-bell-ringing"></i>
+                <div class="notification bg-primary rounded-circle"></div>
+              </a>
+            </li>
+          </ul>
+          <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+            <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+              <a href="{% url 'plan:logout' %}" class="btn btn-primary m-1">Logout</a>
+              
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!--  Header End -->
+      <div class="container-fluid">
+    <meta charset="UTF-8">
+    <title>Trading</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="card">
+      <div class="card-body">
+        <div class="row alig n-items-start">
+          <class="col-8">
+            <strong><p><h4 class="fw-semibold mb-3">Calculate a proper trading plan</h4></p></strong>
+            <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Starting Balance</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Amount ($)" onchange="updateBalance(this.value)">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Growth</label>
+          <input type="number" class="form-control" id="exampleInputEmail1" min="1" max="100" placeholder="select 20%" onchange="updateGrowth(this.value)">
+        </div>
+       
+        <button type="submit" onclick="calculate(this.event)" class="btn btn-primary">Calculate</button>
+         <button type="button" class="btn btn-dark m-1">Cancel</button>
+
+{#    Model form for editing actual return values#}
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Edit Actual Return</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <div class="form-floating mb-3 mt-3">
+                  <input type="number" class="form-control" id="return" onchange="updateActualReturn(this.value)"
+                         placeholder="Enter return" name="return">
+                  <label for="email">Value</label>
+                </div>
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="saveActualReturn()"
+                        data-bs-dismiss="modal">Save</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      <table class="table-primary">
+        <div class="row">
+            <div class="col-12">
+                <div class="container mt-3">
+                  <h2>Records</h2>
+                  <p>Trade Summary</p>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Day</th>
+                        <th>Start Equity</th>
+                        <th>Day End Target</th>
+                        <th>Day End Actual</th>
+                        <th>Over/Under</th>
+                        <th>O/U Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in data %}
+                            <tr>
+                                <td>{{ item.day }}</td>
+                                <td>{{ item.starting_balance }}</td>
+                                <td>{{ item.target }}</td>
+                                <td><span>
+                                    {{ item.actual }}
+                                    <button type="button" class="btn" data-bs-toggle="modal"
+                                            onclick="returnDay = {{ item.day }}; actualReturnId = {{ item.id }}"
+                                            data-bs-target="#myModal">
+                                      <i class="fa fa-edit text-warning mr-2"></i>
+                                    </button>
+                                </span></td>
+                                <td>{{ item.over_under }}</td>
+                                <td>{{ item.over_under_total }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </table>
+
+{{ user|json_script:"user-data" }}
+<script>
+    let startingBalance = 0, growth = 0, actualReturn = null, returnDay = null, actualReturnId = null;
+    let userInfoExists = false;
+
+    const user = JSON.parse(document.getElementById('user-data').textContent);
+    // console.log('Logged in user: ',user);
+
+    function updateBalance(value) {
+        startingBalance = value;
+        // console.log(`New balance: ${startingBalance}`);
+    }
+
+    function updateGrowth(value) {
+        growth = value;
+    }
+
+    function updateActualReturn(value) {
+        actualReturn = value;
+    }
+
+    function saveActualReturn() {
+        axios({
+          method: actualReturnId === null || actualReturnId === -1 ? 'post' : 'put',
+          url: actualReturnId === null || actualReturnId === -1 ? window.location.origin + '/api/actual-returns/' : window.location.origin + '/api/actual-returns/' + actualReturnId.toString() + '/',
+          data: actualReturnId === null || actualReturnId === -1 ? {
+            value: actualReturn,
+            day: returnDay,
+            user: user.id
+          } : {
+            value: actualReturn,
+            day: returnDay,
+            user: user.id,
+            id: actualReturnId
+          }
+        })
+            .then(() => {
+              location.reload();
+              actualReturnId = null;
+            })
+            .catch(error => console.log(error));
+    }
+
+    function calculate(event) {
+        {#event.preventDefault();#}
+
+        console.log('Submitting to ', window.location.origin);
+
+        // Send a POST request
+        axios({
+          method: userInfoExists ? 'put' : 'post',
+          url: userInfoExists ? window.location.origin + '/api/info/' + user.id.toString() + '/' : window.location.origin + '/api/info/',
+          data: {
+            starting_balance: startingBalance,
+            growth: growth,
+            user: user.id
+          }
+        })
+            .then(() => location.reload())
+            .catch(error => console.log(error));
+    }
+
+    axios({
+      method: 'get',
+      url: window.location.origin + '/api/info/' + user.id.toString(),
+    })
+      .then(function (response) {
+        startingBalance = response.data.starting_balance;
+        growth = response.data.growth;
+        userInfoExists = true;
+        document.getElementById('balance').value = startingBalance;
+        document.getElementById('growth').value = growth;
+      });
+</script>
+<div class="py-6 px-6 text-center">
+  <p class="mb-0 fs-4">Copyright © 2024 Hash Forex Uganda. All Rights Reserved</p>
+</div>
+</div>
+</div>
+</div>
+<script src="{% static 'assets/libs/jquery/dist/jquery.min.js' %}"></script>
+<script src="{% static 'assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/js/sidebarmenu.js' %}"></script>
+<script src="{% static 'assets/js/app.min.js' %}"></script>
+<script src="{% static 'assets/libs/apexcharts/dist/apexcharts.min.js' %}"></script>
+<script src="{% static 'assets/libs/simplebar/dist/simplebar.js' %}"></script>
+<script src="{% static 'assets/js/dashboard.js' %}"></script>
+</body>
+</html>
